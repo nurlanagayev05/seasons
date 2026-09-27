@@ -1,0 +1,145 @@
+/* Shared sizing and page background keep the layout consistent. */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #f6f3ec;
+    color: #283630;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.75;
+}
+a {
+    color: inherit;
+    text-underline-offset: 0.25em;
+}
+a:focus-visible {
+    outline: 3px solid #283630;
+    outline-offset: 5px;
+}
+/* Small screens use one column and compact spacing. */
+.page-header, main, footer {
+    width: 90%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-header {
+    padding: 48px 0 34px;
+}
+.eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 22px 0;
+}
+.intro {
+    max-width: 620px;
+    color: #4c5d53;
+    font-size: 1.05rem;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 28px;
+    font-size: 0.9rem;
+}
+.season {
+    border-top: 1px solid #c9cec3;
+    padding: 30px 0 35px;
+}
+.season-number {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+}
+h2 {
+    margin: 6px 0 8px;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+.season-tag {
+    display: block;
+    font-size: 0.85rem;
+}
+.memories h3 {
+    font-size: 1.25rem;
+    margin: 26px 0 12px;
+}
+.memories p {
+    margin: 0 0 22px;
+}
+/* Each season has its own heading color and paragraph color.
+   Dark colors contrast with the light page background. */
+.spring h2, .spring h3 {
+    color: #28613a;
+}
+.spring p, .spring .season-label {
+    color: #35513b;
+}
+.summer h2, .summer h3 {
+    color: #925000;
+}
+.summer p, .summer .season-label {
+    color: #67451d;
+}
+.autumn h2, .autumn h3 {
+    color: #a13c27;
+}
+.autumn p, .autumn .season-label {
+    color: #713f32;
+}
+.winter h2, .winter h3 {
+    color: #235c89;
+}
+.winter p, .winter .season-label {
+    color: #36546b;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid #c9cec3;
+    padding: 25px 0 40px;
+    font-size: 0.85rem;
+}
+/* At 750px and above, labels and reflections sit side by side. */
+@media screen and (min-width: 750px) {
+    .page-header {
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .season {
+        display: grid;
+        grid-template-columns: 1fr 2.3fr;
+        gap: 48px;
+        padding: 40px 0;
+    }
+    .memories h3:first-child {
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+}
+/* Respect reduced-motion preferences for in-page navigation. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

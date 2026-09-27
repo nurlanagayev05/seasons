@@ -1,0 +1,11 @@
+LOCAL STRUCTURE CHECKS
+Passed: balanced HTML tags; four seasons; eight seasonal paragraphs and
+eight paragraph headings; local stylesheet path; lowercase filenames;
+balanced CSS braces; 750px media query present.
+
+Browser rendering could not be checked because this environment did not have
+a browser executable. W3C HTML/CSS validation and deployment remain to be done.
+This report is not a W3C validation result.
+
+REVISION CHECK: All visible page text exactly matches the supplied revision
+after normalization of HTML layout whitespace. CSS unchanged.

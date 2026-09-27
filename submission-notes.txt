@@ -1,0 +1,17 @@
+HOW TO USE
+1. Extract seasons.zip. Keep the seasons folder and all its subfolders together.
+2. Open seasons/index.html in a browser to view the page.
+3. Review the drafted memories and change any details that do not fit you.
+4. The rubric mentions GitHub deployment and validation screenshots. Upload the
+   site files to your course GitHub repository, enable GitHub Pages if required,
+   and check the published page. No GitHub deployment has been performed here.
+5. Validate index.html at https://validator.w3.org/#validate_by_upload and
+   css/mycss.css at https://jigsaw.w3.org/css-validator/#validate_by_upload.
+   Save genuine result screenshots in documents before making your final ZIP.
+   Local browser checks are not a substitute for these validator results.
+6. Zip the seasons folder itself so that seasons/index.html is inside the ZIP,
+   then upload the ZIP to Canvas.
+
+The screenshots supplied did not contain additional detailed CSS rules or the
+contents of the review video. The page implements the visible requirements,
+including a 750px responsive breakpoint. Review any separate class instructions.
